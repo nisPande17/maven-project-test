@@ -11,7 +11,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
     <db:mysql-config name="MySQL_Configuration" host="localhost" port="3306" user="root" password="Password" database="Mule" doc:name="MySQL Configuration"/>
     <flow name="maven-project-testFlow">
         <http:listener config-ref="HTTP_Listener_Configuration" path="/maven" allowedMethods="GET" doc:name="HTTP"/>
-        <set-payload value="Testing_New" doc:name="Set Payload"/>
+        <set-payload value="Testing_Nisha" doc:name="Set Payload"/>
         <logger message="Message : [#[payload]" level="INFO" doc:name="Logger"/>
     </flow>
 </mule>
